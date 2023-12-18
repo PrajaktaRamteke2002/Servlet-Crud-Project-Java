@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Customer_Servlet_App</display-name>
+  <welcome-file-list>
+    <welcome-file>Customer.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>InsertCustomerServlet</servlet-name>
+    <servlet-class>com.controller.InsertCustomerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    
+    <servlet-name>InsertCustomerServlet</servlet-name>
+    <url-pattern>/InsertCustomerServlet</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <servlet-class>com.controller.DeleteCustomerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <url-pattern>/DeleteCustomerServlet</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <servlet-class>com.controller.UpdateCustomerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <url-pattern>/UpdateCustomerServlet</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>ReadCustomerServlet</servlet-name>
+    <servlet-class>com.controller.ReadCustomerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+    
+    <servlet-name>ReadCustomerServlet</servlet-name>
+    <url-pattern>/ReadCustomerServlet</url-pattern>
+  
+  </servlet-mapping>
+</web-app>

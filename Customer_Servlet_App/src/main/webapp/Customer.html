@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h2>Insert customer Data</h2>
+		<form action="InsertCustomerServlet" method="get">
+			
+			<label>Enter Customer Id : </label>
+			<input type="text" name="cid"><br><br>
+			
+			<label>Enter Customer Name : </label>
+			<input type="text" name="cname"><br><br>	
+			
+			<label>Enter Customer address : </label>
+			<input type="text" name="caddress"><br><br>
+			
+			<input type="submit" value="ADD-DATA">	
+			
+			
+			
+		</form>
+		<hr>
+		<h2>Delete Customer data</h2>
+		<form action="DeleteCustomerServlet" method="get">
+			
+			<label>Enter Customer Id : </label>
+			<input type="text" name="did"><br><br>
+			
+			<input type="submit" value="DELETE-DATA">
+			
+		</form>
+		<hr>
+		<h2>Update customer Data</h2>
+		<form action="UpdateCustomerServlet" method="get">
+			
+			<label>Enter Customer Id : </label>
+			<input type="text" name="uid"><br><br>
+			
+			<label>Enter Customer Name : </label>
+			<input type="text" name="uname"><br><br>	
+			
+			<label>Enter Customer address : </label>
+			<input type="text" name="uaddress"><br><br>
+			
+			<input type="submit" value="UPDATE-DATA">	
+			
+			
+			
+		</form>
+		<hr>
+		<h2>Display all data</h2>
+		
+		<a href="ReadCustomerServlet">display data</a>
+		
+
+</body>
+</html>
