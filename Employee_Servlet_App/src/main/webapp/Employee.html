@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h2>Insert Employee Records</h2><br>
+		<form action="InsertEmployeeServlet" method="get">
+			
+			<label>Enter Employee Id : </label>
+			<input type="text" name="eid"><br><br>
+			
+			<label>Enter Employee Name : </label>
+			<input type="text" name="ename"><br><br>	
+			
+			<label>Enter Employee Salary : </label>
+			<input type="text" name="esalary"><br><br>
+			
+			<input type="submit" value="ADD-DATA">	
+			
+					
+			
+		</form>
+		
+		<hr>
+		
+		<h2>Delete Employee Record</h2>
+		 
+		<form action="DeleteEmployeeServlet" method="get">
+			
+			<label>Enter Employee Id : </label>
+			<input type="text" name="did"><br><br>
+			
+			<input type="submit" value="DELETE-DATA">
+			
+			
+		</form>
+		
+		<hr>
+		
+		<h2>Update Employee Record</h2>
+		
+		<form action="UpdateEmployeeServlet" method="get">
+			
+			<label>Enter Employee Id : </label>
+			<input type="text" name="uid"><br><br>
+			
+			<label>Enter Employee Name : </label>
+			<input type="text" name="uname"><br><br>	
+			
+			<label>Enter Employee Salary : </label>
+			<input type="text" name="usalary"><br><br>
+			
+			<input type="submit" value="UPDATE-DATA">	
+			
+		
+		</form>
+		<h2>Display Employee Data</h2>
+		<a href="ReadEmployeeServlet">Display employee data</a>
+
+</body>
+</html>
